@@ -23,6 +23,7 @@ const getWeb3 = () =>
         const name = Chains[chainId];
 
         if (chainId === 3) {
+          console.log(`Test network is ${name}`);
           const { REACT_APP_INFURA_API_URL, REACT_APP_MNEMONIC } = process.env;
           const HDWalletProvider = require("@truffle/hdwallet-provider");
           const web3 = new Web3(
